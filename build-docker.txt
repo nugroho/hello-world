@@ -1,0 +1,5 @@
+mkdir ../hello/
+cp -vi hello ../hello/
+cp -vi Dockerfile-linux.template ../hello/Dockerfile
+docker build -t hello:latest .
+docker run -it --rm hello
